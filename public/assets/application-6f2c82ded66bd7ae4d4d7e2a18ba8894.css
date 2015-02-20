@@ -10,52 +10,25 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
+
+
  */
 
-* {
-  margin: 0;
-  padding: 0;
-}
-html, body {
-  height: 100%;
-}
 #page-body {
-  background-color: gray;
-  height: 100%;
-}
-#skim {
-  height: 2.5%;
-  background-color:gray;
-}
-.section-box {
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
-  height: 95%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
 }
 #landing-page {
   background-color: yellow;
 }
-#buttonA {
-  height:40px;
-  width: 40px;
-  background-color: green;
-}
-#buttonB {
-  height:40px;
-  width: 40px;
-  background-color: blue;
-}
-#backB, #backA {
-  height:40px;
-  width:40px;
-  background-color:red;
-}
 #sectionA {
   background-color: green;
+  position: relative;
+  left: 0;
 }
 #sectionB {
   background-color: blue;
+  position: relative;
+  right: 0;
 }
