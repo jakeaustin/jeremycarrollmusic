@@ -6,39 +6,28 @@ ready = ->
   $("#sectionA").hide();
   $("#sectionB").hide();
   $("#buttonA").on 'click', ->
-    $("#landing-page").hide();
-    $("#sectionA").show();
-    #$("#landing-page").hide('slide', {direction: 'right'}, window.width());
-    #$("#sectionA").show('slide', {direction: 'right'}, window.width());
+    $("#landing-page").fadeOut 200, ->
+      $("#sectionA").fadeIn(300);
+      return
     return
   $("#buttonB").on 'click', ->
-    $("#landing-page").hide();
-    $("#sectionB").show();
-    #$("#landing-page").hide('slide', {direction: 'right'}, window.width());
-    #$("#sectionA").show('slide', {direction: 'right'}, window.width());
+    $("#landing-page").fadeOut 200, ->
+      $("#sectionB").fadeIn(300);
+      return
     return
   $("#backA").on 'click', ->
-    $("#landing-page").show();
-    $("#sectionA").hide();
-    #$("#landing-page").hide('slide', {direction: 'right'}, window.width());
-    #$("#sectionA").show('slide', {direction: 'right'}, window.width());
+    $("#sectionA").fadeOut 200, ->
+      $("#landing-page").fadeIn(300);
+      return
     return
   $("#backB").on 'click', ->
-    $("#landing-page").show();
-    $("#sectionB").hide();
-    #$("#landing-page").hide('slide', {direction: 'right'}, window.width());
-    #$("#sectionA").show('slide', {direction: 'right'}, window.width());
-    return
-  return;
+    $("#sectionB").fadeOut 200, ->
+      $("#landing-page").fadeIn(300);
+      return
+    return;
 
 $(document).ready(ready);
 $(document).on('page:load', ready);
-
-# $("#buttonA").on("click", function() {
-#   console.log('bam');
-#   $("#landing-page").hide('slide', {direction: 'right'}, window.width());
-#   $("#sectionA").show('slide', {direction: 'right'}, window.width());
-# });
 
 
 
