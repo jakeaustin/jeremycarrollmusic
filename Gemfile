@@ -1,5 +1,12 @@
 source 'https://rubygems.org'
 
+
+group :production do
+  gem 'rails_12factor'
+end
+gem 'active_model_serializers'
+gem 'handlebars_assets'
+
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'

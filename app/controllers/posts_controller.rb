@@ -1,6 +1,15 @@
 class PostsController < ApplicationController
 
+
+  def default_serializer_options
+    {root: false}
+  end
+
+  respond_to :json, :html
+
   def index
+    @posts = Post.all
+    respond_with @posts
   end
 
   def new

@@ -3,6 +3,17 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 ready = ->
+  $.ajax(
+    type: 'get'
+    datatype: 'json'
+    url: "http://localhost:3000/posts"
+    ).done((data) ->
+      debugger;
+      $("#postsA").append(HandlebarsTemplates.posts(data));
+      return
+    ).fail ->
+      confirm "failure"
+      return
   $("#sectionA").hide();
   $("#sectionB").hide();
   $("#buttonA").on 'click', ->
