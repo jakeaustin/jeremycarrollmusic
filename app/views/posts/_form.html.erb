@@ -39,6 +39,15 @@
       </div>
       <br>
 
+      <div class="control-group">
+        <%= f.label :category, "Post type" %>
+        <div class="controls">
+          <%= f.collection_radio_buttons(
+              :category, [['Lesson', 'Lesson'],['Music', 'Music']], :first, :last) %>
+        </div>
+      </div>
+      <br>
+
       <div class="form-actions">
         <%= f.submit "Create post!", class: "btn btn-large btn-primary" %>
       </div>

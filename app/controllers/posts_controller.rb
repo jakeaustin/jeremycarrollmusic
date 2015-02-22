@@ -50,7 +50,7 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :content, :embed_code, :created_at)
+    params.require(:post).permit(:title, :content, :embed_code, :category, :created_at)
   end
 
 end
