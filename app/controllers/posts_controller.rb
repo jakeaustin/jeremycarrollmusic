@@ -20,7 +20,7 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
-
+    @post.content = @post.content.gsub(/\r\n/, '<br>')
     if @post.save
       flash[:notice] = "Post saved!"
       redirect_to :back

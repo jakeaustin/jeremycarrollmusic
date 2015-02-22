@@ -37,6 +37,7 @@ html, body {
   height: 95%;
   text-align: center;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 #landing-page {
   background-color: yellow;
@@ -61,4 +62,8 @@ html, body {
 }
 .post-list {
   list-style-type: none;
+}
+hr {
+  width: 70%;
+  margin-left: 15%;
 }

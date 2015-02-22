@@ -1,12 +1,15 @@
-<ul class="post-list">
+<ul class="container post-list">
 {{#each this}}
-<li>
-  <div data-id={{id}} class="post-title">
+<li class="row">
+  <div class="embedded_media col-md-8"><iframe width="560" height="315" src={{{embed_code}}} frameborder="0" allowfullscreen></iframe></div>
+  <div data-id={{id}} class="post-title col-md-3">
     <h2>{{title}}</h2>
+    <h5>{{created_at}}</h4>
+    <br>
+    {{{content}}}
   </div>
-  <h4>{{created_at}}</h4>
-  <div class="embedded_media"><iframe width="560" height="315" src={{{embed_code}}} frameborder="0" allowfullscreen></iframe></div>
-  <p>{{content}}</p>
 </li>
+<hr>
+<br>
 {{/each}}
 <ul>
