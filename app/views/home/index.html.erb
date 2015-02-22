@@ -1,14 +1,18 @@
 <div id="page-body">
   <div id="skim"></div>
   <div id="landing-page" class="section-box">
-    landing page
-    <div id="buttonA">A</div>
-    <div id="buttonB">B</div>
     <% if user_signed_in? %>
+    <div id="logout-button">
     <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+    <%= link_to('New Post', new_post_path) %>
+    </div>
     <% end %>
+    <h1>Jeremy Carroll</h1>
+    <p>Musician, composer, fiddler, thinker, tinkerer</p>
+    <h4>& teacher</h4>
+    <div id="buttonA" class="col-md-4 col-md-offset-1">Music</div>
+    <div id="buttonB" class="col-md-4 col-md-offset-2">Lessons</div>
     <div class="footer-col col-md-12">
-      <h3>Around the Web</h3>
       <ul class="list-inline">
         <li>
         <a href="" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
@@ -27,12 +31,12 @@
   </div>
   <div id="sectionA" class="section-box">
     <div id="backA"><-</div>
-    section a
+    <h1>Music</h1>
     <div id="postsA"></div>
   </div>
   <div id="sectionB" class="section-box">
     <div id="backB"><-</div>
-    section b
+    <h1>Lessons</h1>
     <div id="postsB"></div>
   </div>
 </div>

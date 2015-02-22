@@ -27,7 +27,7 @@ html, body {
   height: 100%;
 }
 #skim {
-  height: 2.5%;
+  height: 0.5%;
   background-color:gray;
 }
 .section-box {
@@ -35,28 +35,30 @@ html, body {
   margin-left: 5%;
   margin-right: 5%;
   height: 95%;
+  text-align: center;
 }
 #landing-page {
   background-color: yellow;
 }
-#buttonA {
-  height:40px;
-  width: 40px;
-  background-color: green;
-}
-#buttonB {
-  height:40px;
-  width: 40px;
-  background-color: blue;
-}
-#backB, #backA {
-  height:40px;
-  width:40px;
-  background-color:red;
-}
 #sectionA {
   background-color: green;
+  overflow-y: scroll;
 }
 #sectionB {
   background-color: blue;
+}
+#buttonA {
+  background-color: green;
+}
+#buttonB {
+  background-color: blue;
+}
+#backB, #backA, #logout-button {
+  height:40px;
+  width:40px;
+  background-color:red;
+  position: absolute;
+}
+.post-list {
+  list-style-type: none;
 }

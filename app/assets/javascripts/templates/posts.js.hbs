@@ -1,11 +1,11 @@
-<ul>
+<ul class="post-list">
 {{#each this}}
 <li>
   <div data-id={{id}} class="post-title">
     <h2>{{title}}</h2>
   </div>
   <h4>{{created_at}}</h4>
-  <div>{{embed_code}}</div>
+  <div class="embedded_media"><iframe width="560" height="315" src={{{embed_code}}} frameborder="0" allowfullscreen></iframe></div>
   <p>{{content}}</p>
 </li>
 {{/each}}
