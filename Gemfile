@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 group :production do
   gem 'rails_12factor'
 end
+gem 'font-awesome-rails'
 gem 'active_model_serializers'
 gem 'handlebars_assets'
 

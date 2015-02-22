@@ -1,12 +1,29 @@
 <div id="page-body">
-<div id="skim"></div>
+  <div id="skim"></div>
   <div id="landing-page" class="section-box">
     landing page
     <div id="buttonA">A</div>
     <div id="buttonB">B</div>
     <% if user_signed_in? %>
-      <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+    <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
     <% end %>
+    <div class="footer-col col-md-12">
+      <h3>Around the Web</h3>
+      <ul class="list-inline">
+        <li>
+        <a href="" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+        </li>
+        <li>
+          <a href="" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a href="" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="" class="btn-social btn-outline"><i class="fa fa-fw fa-instagram"></i></a>
+        </li>
+      </ul>
+    </div>
   </div>
   <div id="sectionA" class="section-box hidden">
     <div id="backA"><-</div>
