@@ -27,10 +27,20 @@ class PostsController < ApplicationController
     end
   end
 
+  def show
+    @post = Post.find(params[:id])
+    respond_with @post
+  end
+
   def edit
+    @post = Post.find(params[:id])
   end
 
   def update
+    @post = Post.find(params[:id])
+    if @post.update(post_params)
+      redirect_to root_path, notice: "You have updated the post #{@post.title}"
+    end
   end
 
   def destroy
