@@ -63,7 +63,15 @@ html, body {
 .post-list {
   list-style-type: none;
 }
+.post-content {
+  text-align: left;
+}
+@media (max-width: 992px) {
+  .post-content {
+    text-align: center;
+  }
+}
 hr {
-  width: 70%;
-  margin-left: 15%;
+  width: 95%;
+  margin-left: 2.5%;
 }
