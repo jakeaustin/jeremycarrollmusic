@@ -8,7 +8,9 @@ class PostsController < ApplicationController
   respond_to :json, :html
 
   def index
-    @posts = Post.all
+    @musicPosts = Post.where("category = 'Music'")
+    @lessonPosts = Post.where("category = 'Lesson'")
+    @posts = {musicPosts: @musicPosts, lessonPosts: @lessonPosts}
     respond_with @posts
   end
 
