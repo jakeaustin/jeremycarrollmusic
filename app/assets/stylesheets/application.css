@@ -36,17 +36,16 @@ html, body {
   margin-right: 5%;
   height: 95%;
   text-align: center;
+  overflow-y: auto;
 }
 #landing-page {
   background-color: yellow;
 }
 #sectionA {
   background-color: green;
-  overflow-y: scroll;
 }
 #sectionB {
   background-color: blue;
-  overflow-y: scroll;
 }
 #buttonA {
   background-color: green;
