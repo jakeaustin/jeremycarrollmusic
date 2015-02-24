@@ -33,12 +33,28 @@
     <div id="backA"><-</div>
     <h1>Music</h1>
     <hr><hr>
-    <div id="postsA"></div>
+    <div id="postsA">
+      <ul>
+        <% @musicPosts.each do |post| %>
+        <li>
+          <%= render post %>
+        </li>
+        <% end %>
+      </ul>
+    </div>
   </div>
   <div id="sectionB" class="section-box">
     <div id="backB"><-</div>
     <h1>Lessons</h1>
     <hr><hr>
-    <div id="postsB"></div>
+    <div id="postsB">
+      <ul>
+        <% @lessonPosts.each do |post| %>
+        <li>
+          <%= render post %>
+        </li>
+        <% end %>
+      </ul>
+    </div>
   </div>
 </div>

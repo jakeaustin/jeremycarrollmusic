@@ -8,8 +8,8 @@ ready = ->
     datatype: 'json'
     url: "http://localhost:3000/posts"
     ).done((data) ->
-      $("#postsA").append(HandlebarsTemplates.posts(data["musicPosts"]));
-      $("#postsB").append(HandlebarsTemplates.posts(data["lessonPosts"]));
+      # $("#postsA").append(HandlebarsTemplates.posts(data["musicPosts"]));
+      # $("#postsB").append(HandlebarsTemplates.posts(data["lessonPosts"]));
       return
     ).fail ->
       confirm "failure"
