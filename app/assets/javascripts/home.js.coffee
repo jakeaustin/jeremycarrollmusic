@@ -16,6 +16,20 @@ ready = ->
       return
   $("#sectionA").hide();
   $("#sectionB").hide();
+  $("#scrollup").hide();
+  $("#sectionA").on 'scroll', ->
+    if $('#sectionA').scrollTop() == 0
+      $('#scrollup').fadeOut 200, ->
+        $('#homeA').fadeIn 300
+      return
+    else
+      $('#homeA').fadeOut 200, ->
+        $('#scrollup').fadeIn 300
+      return
+    return
+  $("#scrollup").on 'click', ->
+    $("#sectionA").scrollTop(0)
+    return
   $("#buttonA").on 'click', ->
     $("#landing-page").fadeOut 200, ->
       $("#sectionA").fadeIn(300);
@@ -26,19 +40,21 @@ ready = ->
       $("#sectionB").fadeIn(300);
       return
     return
-  $("#backA").on 'click', ->
+  $("#homeA").on 'click', ->
     $("#sectionA").fadeOut 200, ->
       $("#landing-page").fadeIn(300);
       return
     return
-  $("#backB").on 'click', ->
+  $("#homeB").on 'click', ->
     $("#sectionB").fadeOut 200, ->
       $("#landing-page").fadeIn(300);
       return
     return;
 
+
 $(document).ready(ready);
 $(document).on('page:load', ready);
 
-
-
+jQuery.fn.scrollTo = (elem, speed) ->
+  $(this).animate { scrollTop: $(this).scrollTop() - $(this).offset().top + $(elem).offset().top }, if speed == undefined then 1000 else speed
+  this
