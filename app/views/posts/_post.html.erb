@@ -6,7 +6,7 @@
       <ul class="tags">
       <% post.tags.each do |tag| %>
         <li>
-          <%= tag.name %>
+          <%= button_to tag.name, tag_path(tag), method: "get" %>
         </li>
       <% end %>
       </ul>
