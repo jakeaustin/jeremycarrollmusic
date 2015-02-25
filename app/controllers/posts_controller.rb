@@ -21,6 +21,8 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     @post.content = @post.content.gsub(/\r\n/, '<br>')
+    @post.embed_code = @post.embed_code.gsub(/width=\"560\"/, "width=\"100%\"").gsub(/height=\"450\"/, "height=\"315\"")
+
     if @post.save
       flash[:notice] = "Post saved!"
       redirect_to root_path
