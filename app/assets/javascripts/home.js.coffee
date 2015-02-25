@@ -37,6 +37,17 @@ ready = ->
         $('#sectionB .scrollup').fadeIn 300
       return
     return
+  $("#tagSection").on 'scroll', ->
+    debugger
+    if $('#tagSection').scrollTop() == 0
+      $('#tagSection .scrollup').fadeOut 200, ->
+        $('#tagSection .homeButton').fadeIn 300
+      return
+    else
+      $('#tagSection .homeButton').fadeOut 200, ->
+        $('#tagSection .scrollup').fadeIn 300
+      return
+    return
   $(".scrollup").on 'click', ->
     $(this).closest(".section-box").scrollTop(0)
     return
@@ -61,10 +72,6 @@ ready = ->
       return
     return;
 
-
 $(document).ready(ready);
 $(document).on('page:load', ready);
 
-jQuery.fn.scrollTo = (elem, speed) ->
-  $(this).animate { scrollTop: $(this).scrollTop() - $(this).offset().top + $(elem).offset().top }, if speed == undefined then 1000 else speed
-  this
