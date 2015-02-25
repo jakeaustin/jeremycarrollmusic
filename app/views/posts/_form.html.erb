@@ -48,6 +48,14 @@
       </div>
       <br>
 
+      <div class="control-group">
+        <%= f.label :all_tags, "tags (separate with comma)" %>
+        <div class="controls">
+          <%= f.text_field :all_tags %>
+        </div>
+      </div>
+      <br>
+
       <div class="form-actions">
         <%= f.submit "Create post!", class: "btn btn-large btn-primary" %>
       </div>

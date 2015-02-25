@@ -3,6 +3,13 @@
     <div data-id={{id}} class="post-title col-md-3">
       <h2><%= post.title %></h2>
       <h5><%= post.created_at %></h4>
+      <ul class="tags">
+      <% post.tags.each do |tag| %>
+        <li>
+          <%= tag.name %>
+        </li>
+      <% end %>
+      </ul>
       <br>
     </div>
   </div>

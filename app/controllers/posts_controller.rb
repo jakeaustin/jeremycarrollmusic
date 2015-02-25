@@ -23,7 +23,7 @@ class PostsController < ApplicationController
     @post.content = @post.content.gsub(/\r\n/, '<br>')
     if @post.save
       flash[:notice] = "Post saved!"
-      redirect_to :back
+      redirect_to root_path
     else
       render :new
     end
@@ -52,7 +52,7 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :content, :embed_code, :category, :created_at)
+    params.require(:post).permit(:title, :content, :embed_code, :category, :created_at, :all_tags)
   end
 
 end
