@@ -1,5 +1,7 @@
-<%= @tag.name %>
-<hr>
+<div class="section-box">
+
+<h1><%= @tag.name %></h1>
+<hr><hr>
 <ul>
 <% @posts.each do |post| %>
 <li>
@@ -7,3 +9,4 @@
 </li>
 <% end %>
 </ul>
+</div>
