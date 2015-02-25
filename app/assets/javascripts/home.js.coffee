@@ -16,19 +16,29 @@ ready = ->
       return
   $("#sectionA").hide();
   $("#sectionB").hide();
-  $("#scrollup").hide();
+  $(".scrollup").hide();
   $("#sectionA").on 'scroll', ->
     if $('#sectionA').scrollTop() == 0
-      $('#scrollup').fadeOut 200, ->
-        $('#homeA').fadeIn 300
+      $('#sectionA .scrollup').fadeOut 200, ->
+        $('#sectionA .homeButton').fadeIn 300
       return
     else
-      $('#homeA').fadeOut 200, ->
-        $('#scrollup').fadeIn 300
+      $('#sectionA .homeButton').fadeOut 200, ->
+        $('#sectionA .scrollup').fadeIn 300
       return
     return
-  $("#scrollup").on 'click', ->
-    $("#sectionA").scrollTop(0)
+  $("#sectionB").on 'scroll', ->
+    if $('#sectionB').scrollTop() == 0
+      $('#sectionB .scrollup').fadeOut 200, ->
+        $('#sectionB .homeButton').fadeIn 300
+      return
+    else
+      $('#sectionB .homeButton').fadeOut 200, ->
+        $('#sectionB .scrollup').fadeIn 300
+      return
+    return
+  $(".scrollup").on 'click', ->
+    $(this).closest(".section-box").scrollTop(0)
     return
   $("#buttonA").on 'click', ->
     $("#landing-page").fadeOut 200, ->
@@ -40,12 +50,12 @@ ready = ->
       $("#sectionB").fadeIn(300);
       return
     return
-  $("#homeA").on 'click', ->
+  $("#sectionA .homeButton").on 'click', ->
     $("#sectionA").fadeOut 200, ->
       $("#landing-page").fadeIn(300);
       return
     return
-  $("#homeB").on 'click', ->
+  $("#sectionB .homeButton").on 'click', ->
     $("#sectionB").fadeOut 200, ->
       $("#landing-page").fadeIn(300);
       return
