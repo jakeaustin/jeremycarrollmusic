@@ -1,9 +1,7 @@
 <% if user_signed_in? %>
-  <div onclick="window.location+='/edit'">click to edit</div>
+  <!-- <div onclick="window.location+='/edit'">click to edit</div> -->
+  <%= button_to "Edit Post", edit_post_path(@post), method: :get %>
+  <%= button_to "Delete Post", post_path(@post), method: :delete %>
 <% end %>
-<h2><%= @post.title %></h2>
-<h4><%= @post.created_at %></h4>
-<div><%= @post.embed_code %></div>
-<p><%= @post.content %></p>
 
 <%= render @post %>
