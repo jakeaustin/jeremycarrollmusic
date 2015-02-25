@@ -39,9 +39,6 @@ ready = ->
 
 $(document).ready(ready);
 $(document).on('page:load', ready);
-# $(document).on 'click', ".post-title", ->
-#     window.location += "posts/" + this.getAttribute("data-id")
-#     return
 
 
 
