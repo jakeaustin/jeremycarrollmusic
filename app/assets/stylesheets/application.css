@@ -41,6 +41,7 @@ html, body {
 }
 #landing-page {
   background-color: rgba(41, 100, 160,1.0);
+  position: relative;
 }
 #sectionA {
   background-color: rgba(149, 165, 166,1.0);
@@ -78,4 +79,13 @@ hr {
 }
 .home-page-link h6 {
   color: rgba(0, 0, 0, 0.3);
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  left: 25%;
+}
+#buttonB {
+  margin-top: 200px;
 }
