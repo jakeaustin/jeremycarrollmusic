@@ -7,32 +7,36 @@
       <%= link_to('New Post', new_post_path) %>
     </div>
     <% end %>
-    <h1>Jeremy Carroll</h1>
-    <p>Musician, composer, fiddler, thinker, tinkerer</p>
-    <h4>& teacher</h4>
-    <div id="buttonA" class="col-md-4 col-md-offset-1">
-      Listen
-      <a class="btn-social btn-outline"><i class="fa fa-fw fa-headphones"></i></a>
+    <div class="row">
+      <h1>Jeremy Carroll</h1>
+      <p>Musician, composer, fiddler, thinker, tinkerer</p>
+      <h4>& teacher</h4>
+      <div id="buttonA">
+        <div class="home-page-link btn-outline col-xs-4 col-xs-offset-4"><h6>Listen</h6>
+<i class="fa fa-fw fa-headphones fa-4x"></i></div>
+      </div>
+      <div id="buttonB">
+        <div class="home-page-link btn-outline col-xs-4 col-xs-offset-4"><h6>Learn</h6>
+<i class="fa fa-fw fa-music fa-4x"></i></div>
+      </div>
     </div>
-    <div id="buttonB" class="col-md-4 col-md-offset-2">
-      Learn
-      <a class="btn-social btn-outline"><i class="fa fa-fw fa-music"></i></a>
-    </div>
-    <div class="footer-col col-md-12">
-      <ul class="list-inline">
-        <li>
-          <a href="" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-        </li>
-        <li>
-          <a href="" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-        </li>
-        <li>
-          <a href="" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-        </li>
-        <li>
-          <a href="" class="btn-social btn-outline"><i class="fa fa-fw fa-instagram"></i></a>
-        </li>
-      </ul>
+    <div class="row">
+      <div class="footer-col col-md-12">
+        <ul class="list-inline">
+          <li>
+            <a href="" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+          </li>
+          <li>
+            <a href="" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+          </li>
+          <li>
+            <a href="" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="" class="btn-social btn-outline"><i class="fa fa-fw fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
   <div id="sectionA" class="section-box">
@@ -42,27 +46,27 @@
     </div>
     <h1 class="section-title">Music</h1>
     <hr><hr>
-      <ul>
-        <% @musicPosts.each do |post| %>
-        <li>
-          <%= render post %>
-        </li>
-        <% end %>
-      </ul>
+    <ul>
+      <% @musicPosts.each do |post| %>
+      <li>
+        <%= render post %>
+      </li>
+      <% end %>
+    </ul>
   </div>
   <div id="sectionB" class="section-box">
-  <div class="backBox">
+    <div class="backBox">
       <a class="homeButton btn-social btn-outline"><i class="fa fa-fw fa-home"></i></a>
       <a class="scrollup btn-social btn-outline"><i class="fa fa-fw fa-sort-up"></i></a>
     </div>
     <h1>Lessons</h1>
     <hr><hr>
-      <ul>
-        <% @lessonPosts.each do |post| %>
-        <li>
-          <%= render post %>
-        </li>
-        <% end %>
-      </ul>
+    <ul>
+      <% @lessonPosts.each do |post| %>
+      <li>
+        <%= render post %>
+      </li>
+      <% end %>
+    </ul>
   </div>
 </div>
