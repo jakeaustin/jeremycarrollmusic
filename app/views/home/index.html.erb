@@ -7,69 +7,68 @@
       <%= link_to('New Post', new_post_path) %>
     </div>
     <% end %>
-    <div class="row">
-      <h1>Jeremy Carroll</h1>
-      <p>Musician, composer, fiddler, thinker, tinkerer</p>
-      <h4>& teacher</h4>
-      <div id="buttonA">
-        <div class="home-page-link btn-outline">
-          <h6>Listen</h6>
-          <i class="fa fa-fw fa-headphones"></i>
-        </div>
-      </div>
-      <div id="buttonB">
-        <div class="home-page-link btn-outline">
-          <i class="fa fa-fw fa-music"></i>
-          <h6>Learn</h6>
-        </div>
-      </div>
-      <div id="footer" class="col-xs-12">
-        <ul class="list-inline">
-          <li>
-            <a href="" class="btn-outline soc-link"><i class="fa fa-fw fa-google-plus fa-2x"></i></a>
-          </li>
-          <li>
-            <a href="" class="btn-outline soc-link"><i class="fa fa-fw fa-linkedin fa-2x"></i></a>
-          </li>
-          <li>
-            <a href="" class="btn-outline soc-link"><i class="fa fa-fw fa-twitter fa-2x"></i></a>
-          </li>
-          <li>
-            <a href="" class="btn-outline soc-link"><i class="fa fa-fw fa-instagram fa-2x"></i></a>
-          </li>
-        </ul>
+    <h1>Jeremy Carroll</h1>
+    <p>Musician, composer, fiddler, thinker, tinkerer</p>
+    <h4>& teacher</h4>
+    <div id="buttonA">
+      <div class="home-page-link btn-outline">
+        <h6>Listen</h6>
+        <i class="fa fa-fw fa-headphones"></i>
       </div>
     </div>
-    <div id="sectionA" class="section-box">
-      <div class="backBox">
-        <a class="homeButton btn-social btn-outline"><i class="fa fa-fw fa-home"></i></a>
-        <a class="scrollup btn-social btn-outline"><i class="fa fa-fw fa-sort-up"></i></a>
+    <div id="buttonB">
+      <div class="home-page-link btn-outline">
+        <i class="fa fa-fw fa-music"></i>
+        <h6>Learn</h6>
       </div>
-      <h1 class="section-title">Music</h1>
-      <hr><hr>
-      <ul>
-        <% @musicPosts.each do |post| %>
-        <li>
-          <%= render post %>
-        </li>
-        <% end %>
-      </ul>
     </div>
-    <div id="sectionB" class="section-box">
-      <div class="backBox">
-        <a class="homeButton btn-social btn-outline"><i class="fa fa-fw fa-home"></i></a>
-        <a class="scrollup btn-social btn-outline"><i class="fa fa-fw fa-sort-up"></i></a>
-      </div>
-      <h1>Lessons</h1>
-      <hr><hr>
-      <ul>
-        <% @lessonPosts.each do |post| %>
-        <li>
-          <%= render post %>
-        </li>
-        <% end %>
-      </ul>
-    </div>
+
+    <ul id="footer" class="list-inline">
+      <li>
+        <a href="" class="btn-outline soc-link"><i class="fa fa-fw fa-google-plus fa-2x"></i></a>
+      </li>
+      <li>
+        <a href="" class="btn-outline soc-link"><i class="fa fa-fw fa-linkedin fa-2x"></i></a>
+      </li>
+      <li>
+        <a href="" class="btn-outline soc-link"><i class="fa fa-fw fa-twitter fa-2x"></i></a>
+      </li>
+      <li>
+        <a href="" class="btn-outline soc-link"><i class="fa fa-fw fa-instagram fa-2x"></i></a>
+      </li>
+    </ul>
+
   </div>
+  <div id="sectionA" class="section-box">
+    <div class="backBox">
+      <a class="homeButton btn-social btn-outline"><i class="fa fa-fw fa-home"></i></a>
+      <a class="scrollup btn-social btn-outline"><i class="fa fa-fw fa-sort-up"></i></a>
+    </div>
+    <h1 class="section-title">Music</h1>
+    <hr><hr>
+    <ul>
+      <% @musicPosts.each do |post| %>
+      <li>
+        <%= render post %>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+  <div id="sectionB" class="section-box">
+    <div class="backBox">
+      <a class="homeButton btn-social btn-outline"><i class="fa fa-fw fa-home"></i></a>
+      <a class="scrollup btn-social btn-outline"><i class="fa fa-fw fa-sort-up"></i></a>
+    </div>
+    <h1>Lessons</h1>
+    <hr><hr>
+    <ul>
+      <% @lessonPosts.each do |post| %>
+      <li>
+        <%= render post %>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
 </div>
 </div>

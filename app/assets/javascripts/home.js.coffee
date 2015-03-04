@@ -48,6 +48,7 @@ ready = ->
     $(this).closest(".section-box").scrollTop(0)
     return
   $("#buttonA").on 'click', ->
+    debugger
     $("#landing-page").fadeOut 200, ->
       $("#sectionA").fadeIn(300);
       return
