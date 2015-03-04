@@ -68,6 +68,11 @@ html, body {
     text-align: center;
   }
 }
+@media (max-width: 350px) {
+  .home-page-link {
+    margin-top: 40%;
+  }
+}
 hr {
   width: 95%;
   margin-left: 2.5%;
@@ -81,13 +86,14 @@ hr {
 #footer {
   position: absolute;
   bottom: 0;
-  width: 50%;
-  left: 25%;
+  width: 100%;
 }
 .soc-link {
   margin-top: 0 !important;
   padding-top: 15px !important;
   border-radius: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .fa-music, .fa-headphones {
   font-size: 8em;
