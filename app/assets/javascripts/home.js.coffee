@@ -56,12 +56,12 @@ ready = ->
     return
   $("#buttonA").on 'click', ->
     debugger
-    $("#landing-page").fadeOut 200, ->
+    $("#landing-page").fadeOut 700, ->
       $("#sectionA").fadeIn(300);
       return
     return
   $("#buttonB").on 'click', ->
-    $("#landing-page").fadeOut 200, ->
+    $("#landing-page").fadeOut 700, ->
       $("#sectionB").fadeIn(300);
       return
     return
