@@ -26,14 +26,17 @@ html, body {
   background-color: black;
   height: 100%;
 }
-#shim {
+/*#shim {
   height: 1%;
   background-color:black;
-}
+}*/
 .section-box {
-  width: 98%;
+  /*border with page-body*/
+  /*width: 98%;
   margin-left: 1%;
-  height: 98%;
+  height: 98%;*/
+  height: 100%;
+  width: 100%;
   text-align: center;
 }
 #landing-page {
@@ -89,17 +92,24 @@ hr {
 }
 #footer {
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   width: 100%;
 }
 .soc-link {
+  margin: 10px;
   margin-top: 0 !important;
-  padding-top: 15px !important;
+  padding: 10px;
+  padding-top: 25px !important;
   border-radius: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 65px !important;
 }
 .fa-music, .fa-headphones {
   font-size: 8em;
+}
+#buttonA {
+  display: inline-block;
+  margin-right: 20%;
+  margin-top: 10%;
+}
+#buttonB {
+  display: inline-block;
 }
