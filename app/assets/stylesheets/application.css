@@ -35,8 +35,6 @@ html, body {
   margin-left: 1%;
   height: 98%;
   text-align: center;
-  overflow-y: auto;
-  overflow-x: hidden;
 }
 #landing-page {
   background-color: rgba(41, 100, 160,1.0);
@@ -44,12 +42,18 @@ html, body {
 }
 #sectionA {
   background-color: rgba(149, 165, 166,1.0);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 #sectionB {
   background-color: rgba(189, 195, 199, 1.0);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 #tagSection {
   background-color: rgba(127, 140, 141,1.0);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .backBox, #logout-button {
   position: absolute;
