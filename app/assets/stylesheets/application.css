@@ -27,14 +27,13 @@ html, body {
   height: 100%;
 }
 #shim {
-  height: 0.5%;
+  height: 1%;
   background-color:black;
 }
 .section-box {
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
-  height: 95%;
+  width: 98%;
+  margin-left: 1%;
+  height: 98%;
   text-align: center;
   overflow-y: auto;
   overflow-x: hidden;
@@ -75,7 +74,6 @@ hr {
 }
 .home-page-link {
   border-radius: 50%;
-  width: 110px;
 }
 .home-page-link h6 {
   color: rgba(0, 0, 0, 0.3);
@@ -86,6 +84,11 @@ hr {
   width: 50%;
   left: 25%;
 }
-#buttonB {
-  margin-top: 200px;
+.soc-link {
+  margin-top: 0 !important;
+  padding-top: 15px !important;
+  border-radius: 20px;
+}
+.fa-music, .fa-headphones {
+  font-size: 8em;
 }
