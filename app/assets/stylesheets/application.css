@@ -26,15 +26,8 @@ html, body {
   background-color: black;
   height: 100%;
 }
-/*#shim {
-  height: 1%;
-  background-color:black;
-}*/
+
 .section-box {
-  /*border with page-body*/
-  /*width: 98%;
-  margin-left: 1%;
-  height: 98%;*/
   height: 100%;
   width: 100%;
   text-align: center;
@@ -73,11 +66,7 @@ html, body {
     text-align: center;
   }
 }
-@media (max-width: 350px) {
-  .home-page-link {
-    margin-top: 40%;
-  }
-}
+
 hr {
   width: 95%;
   margin-left: 2.5%;
@@ -117,11 +106,7 @@ hr {
 #buttonB {
   display: inline-block;
 }
-@media only screen and (min-device-width 320px) and (max-device-width: 480px) {
-  #buttonA {
-    margin-top: 50%;
-  }
-}
+
 .fa-counter-spin {
   -webkit-animation: spin-counter 2s infinite linear;
   -moz-animation: spin-counter 2s infinite linear;
