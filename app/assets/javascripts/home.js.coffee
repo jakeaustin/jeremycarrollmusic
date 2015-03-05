@@ -13,12 +13,12 @@ ready = ->
     ), ->
     $('.fa-music').removeClass 'fa-spin'
     return
-  $('.fa-headphones').hover (->
-    $('.fa-headphones').addClass 'fa-counter-spin'
+  $('.fa-thumbs-up').hover (->
+    $('.fa-thumbs-up').addClass 'fa-counter-spin'
     $(this).children("h6").attr "color", "rgba(0,0,0,0.8)"
     return
     ), ->
-    $('.fa-headphones').removeClass 'fa-counter-spin'
+    $('.fa-thumbs-up').removeClass 'fa-counter-spin'
     return
   $("#sectionA").on 'scroll', ->
     if $('#sectionA').scrollTop() == 0

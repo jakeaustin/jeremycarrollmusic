@@ -105,14 +105,14 @@ hr {
   padding-top: 25px !important;
   border-radius: 20px;
 }
-.fa-music, .fa-headphones {
-  font-size: 8em;
+.fa-music, .fa-thumbs-up {
+  font-size: 6em;
 }
 
 #buttonA {
   display: inline-block;
   margin-right: 20%;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 #buttonB {
   display: inline-block;
