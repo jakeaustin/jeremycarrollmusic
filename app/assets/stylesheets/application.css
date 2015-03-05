@@ -92,11 +92,12 @@ hr {
 }
 #footer {
   position: absolute;
-  bottom: 10px;
+  bottom: 0;
   width: 100%;
 }
 #footer li {
   width: 140px;
+  height: 80px;
 }
 .soc-link {
   margin: 5px;
@@ -112,7 +113,6 @@ hr {
 #buttonA {
   display: inline-block;
   margin-right: 20%;
-  margin-top: 5%;
 }
 #buttonB {
   display: inline-block;
