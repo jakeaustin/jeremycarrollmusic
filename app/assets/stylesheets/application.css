@@ -117,7 +117,11 @@ hr {
 #buttonB {
   display: inline-block;
 }
-
+@media only screen and (min-device-width 320px) and (max-device-width: 480px) {
+  #buttonA {
+    margin-top: 50%;
+  }
+}
 .fa-counter-spin {
   -webkit-animation: spin-counter 2s infinite linear;
   -moz-animation: spin-counter 2s infinite linear;
