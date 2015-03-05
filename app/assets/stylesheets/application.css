@@ -51,7 +51,7 @@ html, body {
 }
 .backBox, #logout-button {
   position: absolute;
-  top: 0;
+  top: 15px;
   margin-left: 25px;
   z-index: 1;
 }
