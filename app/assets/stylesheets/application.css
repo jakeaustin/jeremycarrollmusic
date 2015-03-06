@@ -95,10 +95,12 @@ hr {
     top: 1400px;
   }
   .sectionButtons {
-    margin-top: 400px;
+    margin-top: 200px;
   }
   #buttonA, #buttonB {
     display: block;
+    width: 70%;
+    margin: 0 auto;
   }
   .fa-music, .fa-thumbs-up {
     font-size: 10em;
