@@ -80,16 +80,25 @@ hr {
   color: #F6F6F6;
   font-weight: bold;
 }
-@media (max-width: 992px) {
-  .post-content {
-    text-align: center;
-  }
-}
 #footer {
   position: absolute;
   top: 400px;
   width: 100%;
 }
+@media (max-width: 992px) {
+  .post-content {
+    text-align: center;
+  }
+}
+@media screen and (max-device-width: 700px) and (orientation: portrait) {
+  #footer {
+    top: 700px;
+  }
+  .sectionButtons {
+    margin-top: 100px;
+  }
+}
+
 #footer li, .backBox {
   width: 140px;
   height: 70px;
