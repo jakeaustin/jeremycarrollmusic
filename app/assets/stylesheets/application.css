@@ -52,7 +52,6 @@ html, body {
 .backBox, #logout-button {
   position: absolute;
   top: 15px;
-  margin-left: 25px;
   z-index: 1;
 }
 .post-list {
@@ -84,7 +83,7 @@ hr {
   bottom: 0;
   width: 100%;
 }
-#footer li {
+#footer li, .backBox {
   width: 140px;
   height: 80px;
 }
