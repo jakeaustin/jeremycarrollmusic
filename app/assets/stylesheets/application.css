@@ -92,10 +92,19 @@ hr {
 }
 @media screen and (max-device-width: 700px) and (orientation: portrait) {
   #footer {
-    top: 800px;
+    top: 1400px;
   }
   .sectionButtons {
     margin-top: 400px;
+  }
+  #buttonA, #buttonB {
+    display: block;
+  }
+  .fa-music, .fa-thumbs-up {
+    font-size: 10em;
+  }
+  .home-page-link {
+    padding: 80px;
   }
 }
 
