@@ -36,14 +36,11 @@ html, body {
 }
 #landing-page {
   background-color: rgba(41, 100, 160,1.0);
-  position: relative;
 }
-#sectionA {
+#sectionA, #sectionB {
   background-color: rgba(149, 165, 166,1.0);
 }
-#sectionB {
-  background-color: rgba(189, 195, 199, 1.0);
-}
+
 #tagSection {
   background-color: rgba(127, 140, 141,1.0);
   overflow-y: auto;
@@ -60,50 +57,47 @@ html, body {
 .post-content {
   text-align: left;
 }
-@media (max-width: 992px) {
-  .post-content {
-    text-align: center;
-  }
-}
-
 hr {
   width: 95%;
   margin-left: 2.5%;
 }
+.fa-music, .fa-thumbs-up {
+  font-size: 6em;
+}
+#buttonA {
+  display: inline-block;
+  margin-right: 50px;
+}
+#buttonB {
+  display: inline-block;
+}
+
 .home-page-link {
   border-radius: 50%;
-  padding: 50px;
+  padding: 30px;
 }
 .home-page-link h3 {
   color: #F6F6F6;
   font-weight: bold;
 }
+@media (max-width: 992px) {
+  .post-content {
+    text-align: center;
+  }
+}
 #footer {
   position: absolute;
-  bottom: 0;
+  top: 400px;
   width: 100%;
 }
 #footer li, .backBox {
   width: 140px;
-  height: 80px;
+  height: 70px;
 }
 .soc-link {
-  margin: 5px;
-  margin-top: 0 !important;
   padding: 10px;
   padding-top: 25px !important;
   border-radius: 20px;
-}
-.fa-music, .fa-thumbs-up {
-  font-size: 6em;
-}
-
-#buttonA {
-  display: inline-block;
-  margin-right: 20%;
-}
-#buttonB {
-  display: inline-block;
 }
 
 .fa-counter-spin {
