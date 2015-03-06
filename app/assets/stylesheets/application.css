@@ -92,10 +92,10 @@ hr {
 }
 @media screen and (max-device-width: 700px) and (orientation: portrait) {
   #footer {
-    top: 700px;
+    top: 800px;
   }
   .sectionButtons {
-    margin-top: 100px;
+    margin-top: 400px;
   }
 }
 
