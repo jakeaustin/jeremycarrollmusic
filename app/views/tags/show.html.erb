@@ -2,10 +2,10 @@
   <div id="shim"></div>
   <div id="tagSection" class="section-box">
     <div class="backBox">
-    <a href="/" class="homeButton btn-social btn-outline"><i class="fa fa-fw fa-home"></i></a>
-      <a class="scrollup btn-social btn-outline"><i class="fa fa-fw fa-sort-up"></i></a>
+    <a href="/" class="homeButton soc-link btn-outline"><i class="fa fa-fw fa-home fa-2x"></i></a>
+      <a class="scrollup soc-link btn-outline"><i class="fa fa-fw fa-sort-up fa-2x"></i></a>
     </div>
-    <h1 class="section-title"><%= @tag.name %></h1>
+    <h1 class="section-title">Tag: <%= @tag.name %></h1>
     <hr><hr>
     <ul>
       <% @posts.each do |post| %>
