@@ -7,11 +7,12 @@
     <% else %>
       <h2><%= post.title %></h2>
     <% end %>
-      <h5><%= post.created_at %></h4>
+      <h5><%= post.created_at.strftime("%B %d, %Y @ %I:%M %p") %></h5>
+      <h4>Tagged under:</h4>
       <ul class="tags">
       <% post.tags.each do |tag| %>
-        <li>
-          <%= button_to tag.name, tag_path(tag), method: "get" %>
+        <li class="tag">
+          <%= button_to tag.name, tag_path(tag), method: "get", class: "btn-info btn btn-med" %>
         </li>
       <% end %>
       </ul>
