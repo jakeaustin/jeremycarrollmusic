@@ -1,6 +1,5 @@
   <div class="row">
     <!-- <div class="embedded_media col-md-8"><iframe width="560" height="315" src=<%= post.embed_code %> frameborder="0" allowfullscreen></iframe></div> -->
-    <div class="embedded_media col-md-6 col-md-offset-1 col-xs-10 col-xs-offset-1"><%= raw post.embed_code %></div>
     <div data-id={{id}} class="post-title col-md-3 col-md-offset-1">
     <% if user_signed_in? %>
       <h2><%= link_to post.title, post_path(post) %></h2>
@@ -18,6 +17,8 @@
       </ul>
       <br>
     </div>
+    <div class="embedded_media col-md-6 col-md-offset-1 col-xs-10 col-xs-offset-1"><%= raw post.embed_code %></div>
+    
   </div>
   <div class="row">
     <div class="col-md-10 col-md-offset-1 post-content">
